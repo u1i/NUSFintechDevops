@@ -26,7 +26,7 @@ https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/FX.html
 With the created Dockerfile, the following steps were executed :
 https://docs.docker.com/engine/reference/commandline/docker/
 
-##### Build Docker Image (where the . represent to include every files in the directory)
+##### Build Docker Image 
 ```docker build -t mainjs . ```
 
 ##### Check on the existing image
