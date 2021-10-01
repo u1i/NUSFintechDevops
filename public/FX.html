@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      <!-- jquery source -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fx.css" />
     
-    <title>Currency & Crypto Check</title>
+    <title>Currency Check</title>
     
-    <h1>Currency Check </h1>
-    <p class = 'link'></p>
+    <img src="currency-g2dce8a3c3_640.png" >
+    <p></p>
+    <h1 id="symbol"></h1>
+    
 </head>
 <body>
 
-    <div class = 'balance'></div>
+    <h1 id="symbol"></h1>
 <div>
     
-    <form id="myform">
+    <form id="mypanel">
         
         <label for="ticker"><strong>From</strong>:</label>
         <input type="text" id="quote" name="ticker" placeholder="eg.SGD">
@@ -38,9 +40,9 @@
       <br><button class="btn btn-outline-primary" onclick="getInputValue();">Get FX Quote</button>
       <button class = "btn btn-dark" onclick="refresh()">Refresh</button>
       
-      <h1 id="symbol"></h1>
+    
 </div>
-</div>
+
 
 <div id="mypanel">
     

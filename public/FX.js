@@ -19,11 +19,11 @@ function getInputValue() {
 
   Price ='https://api.polygon.io/v2/aggs/ticker/'+'C:'+[stock]+'/range/1/day/'+[datefrom]+'/'+[dateto]+'?adjusted=true&sort=asc&limit=50000&apiKey=f6NqhgBtOpJ9ceSA2w_C2j4Tj43VREQc' //Aggregates (Bars) API
 
-  Crypto = 'https://api.polygon.io/v2/aggs/grouped/locale/global/market/crypto/'+[datefrom]+'?adjusted=true&apiKey=f6NqhgBtOpJ9ceSA2w_C2j4Tj43VREQc'
+  
   
   console.log(Price);
   console.log(value);
-  console.log(Crypto);
+  
 
   $.getJSON(Price, function(data) {
     console.log(data);
