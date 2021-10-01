@@ -44,6 +44,17 @@ https://docs.docker.com/engine/reference/commandline/docker/
 ### Continuous Integration
 Using the Github action to continuous build and push any git push file update to DockerHub to ensure that the images is always up to date for container deployment.
 
+- Define the Dockerhub username and password via Setting > Secret
+
+Workflow (YAML file)
+- Setup the docker login with the secret.username and password
+- Setup the Node.js environment
+- Build the Docker Image
+- Enable Docker Push
+
+### Continuous Development 
+Using the function of the Google Cloud Build and Google Cloud Run
+
 
 
 
