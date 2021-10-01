@@ -30,7 +30,7 @@ function getInputValue() {
     console.log(data.results);
   
     //Insert FX ticker by in the form of getElementby ID
-    //document.getElementById('symbol').innerHTML = data.ticker;
+    document.getElementById('symbol').innerHTML = data.ticker;
 
     //Declare Base and Quote Currency
     let Quote = quote;
