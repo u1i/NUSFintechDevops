@@ -4,7 +4,7 @@ For Devops Assignment
 https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/FX.html
 
 # Build Docker Images in Visual Studio
-```docker build -t mainjs .
+```docker build -t mainjs . ```
 
 # Check on the exist image
 ```docker images
