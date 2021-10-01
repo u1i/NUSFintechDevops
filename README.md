@@ -53,9 +53,9 @@ Workflow (YAML file)
 - Build the Docker Image
 - Enable Docker Push
 
-  Docker Image for deployment 
-  ---
-  docker pull andrewlimyh/mainjs
+ Docker Image for deployment 
+ ---
+ ```docker pull andrewlimyh/mainjs```
 
 ### Continuous Development 
 ***
