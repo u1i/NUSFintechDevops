@@ -28,9 +28,9 @@ jobs:
     
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag mymainjs:latest
+      run: docker build . --file Dockerfile --tag mainjs
 
       
     - name: docker push
-      run : docker push andrewlimyh/mainjs:latest
+      run : docker push andrewlimyh/mainjs
 
