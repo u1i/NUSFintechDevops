@@ -1,9 +1,8 @@
 # NUSFintechDevops
-For Devops Assignment
-
-CI/CD Flow
+Devops Assignment - CI/CD Flow
 
 https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/FX.html
+
 
 ## PLAN,BUILD,CODE & TEST
 
@@ -25,7 +24,6 @@ https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/FX.html
 - Enable an executable container                                eg ENTRYPOINT ["node"] & CMD ["main.js"
 
 With the created Dockerfile, the following steps were executed :
-
 https://docs.docker.com/engine/reference/commandline/docker/
 
 ##### Build Docker Image (where the . represent to include every files in the directory)
@@ -42,3 +40,12 @@ https://docs.docker.com/engine/reference/commandline/docker/
 
 ##### Stop the container from running
  ```docker stop c42758de58f0 ```
+ 
+### Continuous Integration
+Using the Github action to continuous build and push any git push file update to DockerHub to ensure that the images is always up to date for container deployment.
+
+
+
+
+
+
