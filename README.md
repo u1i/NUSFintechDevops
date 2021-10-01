@@ -53,6 +53,10 @@ Workflow (YAML file)
 - Build the Docker Image
 - Enable Docker Push
 
+Docker Image for deployment 
+---
+docker pull andrewlimyh/mainjs
+
 ### Continuous Development 
 ***
 Using the function of the Google Cloud Build and Google Cloud Run
