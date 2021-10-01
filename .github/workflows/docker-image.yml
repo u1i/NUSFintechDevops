@@ -14,12 +14,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-    -name : docker login
-     env:
-        DOCKER_USER: ${{ secrets.DOCKER_USER }}
-        DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
-     run: docker login -u $DOCKER_USER -p $DOCKER_PASS
+  
+    - name: docker login
+      uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASS }}
+ 
+   
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.4.1
