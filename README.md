@@ -12,7 +12,7 @@ https://docs.docker.com/engine/reference/commandline/docker/
 ### Build Docker Image (where the . represent to include every files in the directory)
 ```docker build -t (imagename) . ```
 
-```docker build -t mainjs . ```
+example - ```docker build -t mainjs . ```
 
 ### Check on the existing image
 ```docker images ```
@@ -20,7 +20,7 @@ https://docs.docker.com/engine/reference/commandline/docker/
 ### Run the images with a container
 ```docker run -it -d -p (any port number):(port defined in your node.js file) (imagename) ```
 
-```docker run -it -d -p 3001:3000 mainjs ```
+example - ```docker run -it -d -p 3001:3000 mainjs ```
 
 ### Check if the container is running
 ```docker ps ```
@@ -28,4 +28,4 @@ https://docs.docker.com/engine/reference/commandline/docker/
 ### Stop the container from running
 ```docker stop <container id> ```
 
-```docker stop c42758de58f0 ```
+example - ```docker stop c42758de58f0 ```
