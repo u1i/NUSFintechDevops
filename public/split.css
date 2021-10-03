@@ -86,3 +86,7 @@ button:hover {
     text-decoration: underline;
     letter-spacing: 0.5px;
 }
+
+body{
+    background-color: blanchedalmond;
+}
