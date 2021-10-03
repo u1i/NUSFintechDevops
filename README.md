@@ -3,6 +3,8 @@ Devops Assignment - CI/CD Flow
 
 https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/FX.html
 
+https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/main.html
+
 
 ## PLAN,BUILD,CODE & TEST
 
