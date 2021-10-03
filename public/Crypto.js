@@ -54,10 +54,10 @@ function getCryptoValue() {
         text = text + 
         `<tr> 
           <td>${new Date(price.t).toLocaleString("en-SG", options)}</td> 
-          <td>${price.o.toFixed(2)} </td> 
-          <td>${price.h.toFixed(2)} </td>
-          <td>${price.l.toFixed(2)} </td> 
-          <td>${price.c.toFixed(2)} </td> 
+          <td>${price.o.toFixed(5)} </td> 
+          <td>${price.h.toFixed(5)} </td>
+          <td>${price.l.toFixed(5)} </td> 
+          <td>${price.c.toFixed(5)} </td> 
           <td>${price.v.toFixed(0)} </td>
         </tr>`
 

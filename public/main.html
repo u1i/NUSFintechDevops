@@ -8,19 +8,21 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      <!-- jquery source -->
     <link rel="stylesheet" href="split.css" />
     
-    <title> Check</title>
-    <button class = "btn btn-dark" onclick="refresh()">Refresh</button>
+    <title> Forex,Stock and Crypto Stop</title>
+    
+    
    
     
 </head>
 <body>
-
+    <button class = "btn btn-dark" onclick="refresh()">Refresh</button>
     <div class="splitscreen">
         <!-- For FX -->
 
         <div class="left">
-            <strong>Forex & FXConversion Check</strong>
-            <br>
+            
+            <strong><h2>Forex Check</h2></strong>
+        
             <form id="mypanel">
         
                 <label for="ticker"><strong>From (Quote):</strong>:</label>
@@ -29,25 +31,29 @@
                 <label for="ticker"><strong> To (Base):</strong></label>
                 <input type="text" id="base" name="ticker" placeholder="eg.USD"><br><br>
         
-                <label for="Value"><strong>Amount</strong> </label><br>
-                <input type="int" id="Value" name="Amount" placeholder="Amount"><br><br>
+                <!-- <label for="Value"><strong>Amount</strong> </label><br>
+                <input type="int" id="Value" name="Amount" placeholder="Amount"><br><br> -->
         
                 <label for="Date"><strong>Transaction Date (From):</strong></label><br>
                 <input type="text" id="fxtransactionfrm" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br>
                 
                 <label for="Date"><strong>Transaction Date (To):</strong></label><br>
-                <input type="text" id="fxtransactionto" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br>
+                <input type="text" id="fxtransactionto" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br><br><br><br>
              
         
               </form>
-              <br><button class="btn btn-outline-primary" onclick="getInputValue();">Get FX Quote</button><br>
+              <br><button class="btn btn-outline-primary" onclick="getInputValue();">Get FX Details</button><br>
               <div><h1 id="symbol"></h1></div>
               <div><script src="FXcheck.js"></script></div>
+
+              <strong><h3> Conversion Check</h3></strong>
+              <a href="/public/FX.html">FX Conversion</a>
         </div>
 
         <div class="Center">
             <!-- For stock -->
-            <strong>US Stock Check</strong>
+            
+            <strong><h2>US Stock Check</h2></strong>
             <br>
             <form id="mypanel">
         
@@ -75,7 +81,8 @@
     
         <div class="right">
             <!-- For Cryto -->
-            <strong>Crypto Check</strong>
+            
+            <strong><h2>Crypto Check</h2></strong>
             <br>
             <form id="mypanel">
         
