@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      <!-- jquery source -->
+    <link rel="stylesheet" href="split.css" />
+    
+    <title> Check</title>
+    <button class = "btn btn-dark" onclick="refresh()">Refresh</button>
+   
+    
+</head>
+<body>
+
+    <div class="splitscreen">
+        <!-- For FX -->
+
+        <div class="left">
+            <strong>Forex & FXConversion Check</strong>
+            <br>
+            <form id="mypanel">
+        
+                <label for="ticker"><strong>From (Quote):</strong>:</label>
+                <input type="text" id="quote" name="ticker" placeholder="eg.SGD">
+                
+                <label for="ticker"><strong> To (Base):</strong></label>
+                <input type="text" id="base" name="ticker" placeholder="eg.USD"><br><br>
+        
+                <label for="Value"><strong>Amount</strong> </label><br>
+                <input type="int" id="Value" name="Amount" placeholder="Amount"><br><br>
+        
+                <label for="Date"><strong>Transaction Date (From):</strong></label><br>
+                <input type="text" id="fxtransactionfrm" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br>
+                
+                <label for="Date"><strong>Transaction Date (To):</strong></label><br>
+                <input type="text" id="fxtransactionto" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br>
+             
+        
+              </form>
+              <br><button class="btn btn-outline-primary" onclick="getInputValue();">Get FX Quote</button><br>
+              <div><h1 id="symbol"></h1></div>
+              <div><script src="FXcheck.js"></script></div>
+        </div>
+
+        <div class="Center">
+            <!-- For stock -->
+            <strong>US Stock Check</strong>
+            <br>
+            <form id="mypanel">
+        
+                <label for="ticker"><strong>Stock Symbol</strong>:</label>
+                <input type="text" id="stock" name="stock" placeholder="eg.FB">
+        
+                <br><br>
+        
+                <label for="Date"><strong>Transaction Date (From):</strong></label><br>
+                <input type="text" id="stkdatetransactionfrom" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br>
+                
+                <label for="Date"><strong>Transaction Date(To):</strong></label><br>
+                <input type="text" id="stkdatetransactionto" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br>
+             
+        
+              </form>
+              <br><button class="btn btn-outline-primary" onclick="getstockValue();">Get Stock Details</button><br>
+              <div><h1 id="stocksymbol"></h1></div>
+              <div><script src="stock.js"></script></div>
+            
+            
+           
+            
+        </div>
+    
+        <div class="right">
+            <!-- For Cryto -->
+            <strong>Crypto Check</strong>
+            <br>
+            <form id="mypanel">
+        
+                <label for="ticker"><strong>Crypto Symbol</strong>:</label>
+                <input type="text" id="Crypto" name="Crypto" placeholder="eg.BTCUSD">
+        
+                <br><br>
+        
+                <label for="Date"><strong>Transaction Date (From):</strong></label><br>
+                <input type="text" id="Cryptotransactionfrom" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br>
+                
+                <label for="Date"><strong>Transaction Date(To):</strong></label><br>
+                <input type="text" id="Cryptotransactionto" name="Transaction Date" placeholder="YYYY-MM-DD"><br><br>
+             
+        
+              </form>
+              <br><button class="btn btn-outline-primary" onclick="getCryptoValue();">Get Crypto Details</button><br>
+              <div><h1 id="Cryptosymbol"></h1></div>
+              <div><script src="Crypto.js"></script></div>
+            
+    </div>
+
+
+</body>
+
+
+</html>

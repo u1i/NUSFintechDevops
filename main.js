@@ -12,7 +12,8 @@ app.use('/js', express.static(__dirname + '/public/js'));
 
 // IUse redirect the page from / to /fx.html
 app.get("/", (request,response) => {
-    response.redirect('/FX.html') 
+    //response.redirect('/FX.html') 
+    response.redirect('/main.html')
 });
 
 
