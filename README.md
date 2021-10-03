@@ -1,12 +1,8 @@
 # NUSFintechDevops
 Devops Assignment - CI/CD Flow
 
-https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/FX.html
-
+#### Deployed Pages
 https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/main.html
-
-
-## PLAN,BUILD,CODE & TEST
 
 ## Front end Development
 ***
@@ -23,7 +19,7 @@ https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/main.html
 - Copy all the source code and file into the working director   eg Copy . /app
 - Defined the listening port as indicated in the node.js file   eg EXPOSE 3000
 - Install all the essential modules and packages for it to run  eg RUN apk add nodejs npm npm install
-- Enable an executable container                                eg ENTRYPOINT ["node"] & CMD ["main.js"
+- Enable an executable container                                eg ENTRYPOINT ["node"] & CMD ["main.js"]
 
 With the created Dockerfile, the following steps were executed :
 https://docs.docker.com/engine/reference/commandline/docker/
