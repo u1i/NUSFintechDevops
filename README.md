@@ -1,5 +1,4 @@
-# NUSFintechDevops
-Devops Assignment - CI/CD Flow
+# NUSFintechDevops - CI/CD Flow
 
 #### Deployed Pages
 https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/main.html
