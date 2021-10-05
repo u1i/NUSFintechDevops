@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      <!-- jquery source -->
+    <link rel="stylesheet" href="Newsinfo.css" />
+    
+    <title>Company Info and News</title>
+</head>
+<body>
+    <br>
+    <div>
+        
+        <form id="myform">
+            <label for="ticker">Stock ticker:</label><br>
+            <input type="text" id="ticker" name="ticker" placeholder="insert your ticker"><br><br>
+            <label for="Date_from">News Date from:</label><br>
+            <input type="text" id="Date_from" name="Date_from" placeholder="YYYY-MM-DD">
+        
+          </form>
+          <br><br>       
+          <button class = "btn btn-outline-dark" onclick="infownews ()">Ticker Info & News</button>
+          <button class = "btn btn-dark" onclick="refresh()">Refresh</button>
+          <br><br>
+          <a href="/main.html">Back to Main</a>
+
+          
+    </div>
+
+
+
+    <div class="myco">
+    <!-- Company Info -->
+    <h1 id="symbol"></h1>
+    <h2 id="name"><h2 id="url"></h2>
+    <h4 id="Desc"></h4>
+    <h4 id="Sector"></h4> <h4 id="industry"></h4>
+    </div>
+
+    <div class="mypanel">
+        <script src="Newsinfo.js"></script>
+    </div>
+</body>
+</html>
