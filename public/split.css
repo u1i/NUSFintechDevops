@@ -90,3 +90,12 @@ button:hover {
 body{
     background-color: blanchedalmond;
 }
+
+
+H1 {
+    position: fixed;
+    top: 10%;
+    left: 48%;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
