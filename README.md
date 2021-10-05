@@ -130,7 +130,7 @@ Docker Image for deployment
 
 Using the function of the Google Cloud Build and Google Cloud Run
 
-<img src="https://storage.googleapis.com/gcp-community/tutorials/cicd-cloud-run-github-actions/cover.png"/>
+<img src="https://storage.googleapis.com/gcp-community/tutorials/cicd-cloud-run-github-actions/cover.png" alt="https://storage.googleapis.com/gcp-community/tutorials/cicd-cloud-run-github-actions/cover.png"/>
 
 ### Google Cloud Build (Container Registry)
 ---
@@ -167,7 +167,7 @@ Specify the container port in Advanced Setting to make sure that it is same as w
 In order for make it easy for the general public to access the apps do note that on how the service is triggerconfiguration set it to (_Allow all traffic_) & (_Allow unauthenticated invocations_)
 
   
-  <img src="https://assets.hongkiat.com/uploads/ifttt-recipes-for-github/ifttt-github-recipe-slack.jpg"/>
+  <img src="https://assets.hongkiat.com/uploads/ifttt-recipes-for-github/ifttt-github-recipe-slack.jpg" alt="https://assets.hongkiat.com/uploads/ifttt-recipes-for-github/ifttt-github-recipe-slack.jpg"/>
 
 ### IFTTT Github Repository to Slack Notification
 ---
