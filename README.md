@@ -1,17 +1,27 @@
 # NUSFintechDevops - CI/CD Flow
 
-#### Deployed Pages
+## Metrics
+
+Continous Integration and Deploy on any git push event in the repository
+##### 1. Dockerhub (Image Update)
+```docker pull andrewlimyh/mainjs```
+
+##### 2. Deployed Pages
 https://nusfintechdevopsfx-3w6afueuvq-as.a.run.app/main.html
 
-## Front end Development
+##### 3. Notification on Slack on any triggered event in the repository
+https://app.slack.com/client/T02G7L0398X/C02GKB69X1T/user_profile/U02GQGMCTPE
+
+
+### Front end Development
 ***
-Build javascript(JS) to connect Polygon.io API to get Forex,Stock and Crypto price movement via the user input in the html.
+Build javascript(JS) to connect Polygon.io API to get Forex,Stock and Crypto price movement
 ___
 - Build node.js(main.js) where it start a listen port 3000 and redirect the any access to the page to the main.html front.
 - Link the FXcheck.js,Stock.js and Crypto.js to a frontend interface (main.html and split.css) where it serve to collect the user input to make the relevant API call and display the desired results.
 - The main.html has a hyperlink to FX.html where the FX conversion is performed after the user input throught FX.js API call to get the ccnversion result.
 
-## App containerization using Docker
+### App containerization using Docker
 ***
 ##### Create a Dockerfile
 
@@ -23,13 +33,7 @@ ___
 - Enable an executable container                                `ENTRYPOINT ["node"]` & `CMD ["main.js"]`
 
 
-```mermaid
-flowchart TD 
 
-id1[Specify the operating system image] --> id2[Set the working directory] --> id3[Copy all the source code and file into the working directory] --> id4[Defined the listening port as indicated in the node.js file] --> id5[Install all the essential modules and packages for it to run]--> id6[Enable an executable container]
-
-id7[FROM alpine:latest] --> id8[WORKDIR /app] --> id9[Copy . /app] --> id10[EXPOSE 3000] --> id11[RUN apk add nodejs npm / npm install]--> id12["ENTRYPOINT [''node'']"] --> id13["CMD [''main.js'']"]
-```
 
 
 
@@ -89,6 +93,12 @@ Specify the container port in Advanced Setting to make sure that it is same as w
 In order for make it easy for the general public to access the apps do note that on how the service is triggerconfiguration set it to (_Allow all traffic_) & (_Allow unauthenticated invocations_)
 
 
+### IFTTT Github Repository to Slack Notification
+
+- Authorise the Connection of IFTTT to the Github
+- Specify the Repository name (Antoryu/NUSFintechDevops) for any new repository event
+- Authorise the connection of IFTTT to Slack
+- Specify the Channel (Devops) and the message details
 
 
 
