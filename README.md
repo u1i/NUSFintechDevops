@@ -72,25 +72,7 @@ Workflow (YAML file)
 
  
 ***
-Using the function of the Google Cloud Build and Google Cloud Run
 
-### Google Cloud Build (Container Registry)
-https://cloud.google.com/build/docs/automating-builds/build-repos-from-github
-
-The process is a breeeze with the Cloud Build API where it enable the build,test and deploy from any update (push event int the github repository) via their serverless CI/CD interface.
-
-This was done by enable and authorise the Cloud Build to connect to your Github repository(*https://github.com/AntoryuLimyh*) followed by selecting the repository (*NUSFintechDevops*) that you want it track.
-
-Select the push to a branch option and have the configuration set as Dockerfile where it will set off the building process on any push action detected in the said repository. (Similar to the Dockerfile YAML where the end images will be push the repository in Dockerhub).
-
-### Google Cloud run
-Develop and deploy the containerized applications on the serverless platform
-
-Select the image from the container registry (us.gcr.io/nusdevops/github_antoryulimyh_nusfintechdevops/nusfintechdevops@sha256:87bac07f112ec9b38ab8e504c761463a17032b7be48a1aed9c9533f9c7a564b0) from you have done with the Cloud Build. 
-
-Specify the container port in Advanced Setting to make sure that it is same as what was listed in your node.js and Dockerfile (*3000*)
-
-In order for make it easy for the general public to access the apps do note that on how the service is triggerconfiguration set it to (_Allow all traffic_) & (_Allow unauthenticated invocations_)
 
 
 ### IFTTT Github Repository to Slack Notification
