@@ -1,7 +1,7 @@
 # NUSFintechDevops - CI/CD 
 
   
-<img src="https://github.com/AntoryuLimyh/NUSFintechDevops/blob/main/images/CICD.png"/>
+<img src="https://drive.google.com/uc?export=view&id=1bePGPSVxY81L1LSt8ImAgWJRjO01LdDU"/>
 
 ### Objective
 ---
