@@ -1,7 +1,7 @@
 # NUSFintechDevops - CI/CD 
 
   
-<img src="https://github.com/AntoryuLimyh/NUSFintechDevops/blob/main/CICD_.png"/>
+<img src="https://github.com/AntoryuLimyh/NUSFintechDevops/blob/main/images/CICD.png"/>
 
 ### Objective
 ---
@@ -34,12 +34,13 @@ Build javascript(JS) to connect Polygon.io API to get Forex,Stock and Crypto pri
 
 
 
-- Build node.js(main.js) where it start a listen port 3000 and redirect the any access to the page to the main.html front.
+- Build node.js(main.js) where it starts with a listening port 3000 and redirect the any access to the page to the main.html front.
 
 - Link the FXcheck.js,Stock.js and Crypto.js to a frontend interface (main.html and split.css) where it serve to collect the user input to make the relevant API call and display the desired results.
 
-- The main.html has a hyperlink to FX.html where the FX conversion is performed after the user input throught FX.js API call to get the conversion result.
+- The main.html has a hyperlink to FX.html where the FX conversion is performed after the user input through FX.js API call to get the conversion result.
 
+- The main.html has a hyperlink to Newsinfo.html where it return the ticker company info and its related news via Newsinfo.js API call.
   
 
 ### App containerization using Docker
@@ -138,7 +139,7 @@ https://cloud.google.com/build/docs/automating-builds/build-repos-from-github
 
   
 
-The process is a breeeze with the Cloud Build API where it enable the build,test and deploy from any update (push event int the github repository) via their serverless CI/CD interface.
+The process was made a breeeze with the Cloud Build API where it enable the build,test and deploy from any update (push event int the github repository) via their serverless CI/CD interface.
 
   
 
