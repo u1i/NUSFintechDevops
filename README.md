@@ -1,6 +1,7 @@
 # NUSFintechDevops - CI/CD 
 
-  
+  ![cicd](https://user-images.githubusercontent.com/27874591/136310803-a2b3f6eb-7b4f-45dd-b9ff-47fc4601d70b.png)
+
 <img src="https://drive.google.com/uc?export=view&id=1bePGPSVxY81L1LSt8ImAgWJRjO01LdDU"/>
 
 ### Objective
