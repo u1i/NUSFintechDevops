@@ -1,8 +1,7 @@
 # NUSFintechDevops - CI/CD 
 
+![](cicd.png)
   
-<img src="https://drive.google.com/uc?export=view&id=1bePGPSVxY81L1LSt8ImAgWJRjO01LdDU"/>
-
 ### Objective
 ---
 #### Continous Integration and Deploy on any git push event in the repository
